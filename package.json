@@ -1,20 +1,16 @@
 {
-  "name": "email-bounce-parser",
+  "name": "email-bounce-parser-browser",
   "version": "1.0.22",
-  "description": "Parses bounce emails and extract errors",
-  "author": "Eliott Vincent <eliott@crisp.chat>",
+  "description": "Parses bounce emails and extract errors (in browser)",
+  "author": "Eliott Vincent <eliott@crisp.chat> (adapted to browser by ShareVB)",
   "main": "lib/index.js",
-  "homepage": "https://github.com/crisp-oss/email-bounce-parser",
+  "homepage": "https://github.com/sharevb/email-bounce-parser-browser",
   "repository": {
     "type": "git",
-    "url": "git://github.com/crisp-oss/email-bounce-parser"
+    "url": "git://github.com/sharevb/email-bounce-parser-browser"
   },
   "bugs": {
     "url": "https://github.com/crisp-oss/email-bounce-parser/issues"
-  },
-  "engineStrict": true,
-  "engines": {
-    "node": ">=14.18.0"
   },
   "scripts": {
     "test": "nodeunit ./test/index.js"
@@ -23,7 +19,7 @@
     "nodeunit-x": "0.15.0"
   },
   "dependencies": {
-    "re2": "1.20.7"
+    "re2-wasm": "^1.0.2"
   },
   "keywords": [
     "parser",
