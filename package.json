@@ -1,6 +1,6 @@
 {
   "name": "email-bounce-parser-browser",
-  "version": "1.0.23",
+  "version": "1.1.0",
   "description": "Parses bounce emails and extract errors (in browser)",
   "author": "Eliott Vincent <eliott@crisp.chat> (adapted to browser by ShareVB)",
   "main": "lib/index.js",
@@ -17,9 +17,6 @@
   },
   "devDependencies": {
     "nodeunit-x": "0.15.0"
-  },
-  "dependencies": {
-    "re2-wasm-embedded": "^1.1"
   },
   "keywords": [
     "parser",
