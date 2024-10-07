@@ -1,27 +1,18 @@
-# Email Bounce Parser
+# Email Bounce Parser in Browser
 
 [![Test and Build](https://github.com/sharevb/email-bounce-parser-browser/workflows/Test%20and%20Build/badge.svg?branch=master)](https://github.com/sharevb/email-bounce-parser-browser/actions?query=workflow%3A%22Test+and+Build%22) [![Build and Release](https://github.com/sharevb/email-bounce-parser-browser/workflows/Build%20and%20Release/badge.svg)](https://github.com/sharevb/email-bounce-parser-browser/actions?query=workflow%3A%22Build+and+Release%22) [![NPM](https://img.shields.io/npm/v/email-bounce-parser.svg)](https://www.npmjs.com/package/email-bounce-parser) [![Downloads](https://img.shields.io/npm/dt/email-bounce-parser.svg)](https://www.npmjs.com/package/email-bounce-parser)
 
-Parses bounce emails and extracts details in Browser
+Parses bounce emails and extracts details **in Browser**
 
-**😘 Maintainer**: [@eliottvincent](https://github.com/eliottvincent), ShareVB
+**😘 Maintainer**: ShareVB
 
-## Who uses it?
+## Original Library
 
-<table>
-<tr>
-<td align="center"><a href="https://crisp.chat/"><img src="https://crisp.chat/favicon-256x256.png" height="64" /></a></td>
-</tr>
-<tr>
-<td align="center">Crisp</td>
-</tr>
-</table>
-
-_👋 You use this library and you want to be listed there? [Contact us](https://crisp.chat/)._
+https://github.com/crisp/email-bounce-parser
 
 ## Features
 
-This library is used at [Crisp](https://crisp.chat/) everyday to parse bounce emails.
+The original library is used at [Crisp](https://crisp.chat/) everyday to parse bounce emails.
 It supports most variations of bounce emails (Postfix, Dovecat, Gmail, Outlook).
 
 ## Usage
@@ -42,7 +33,7 @@ console.log(result);
 * `body` must be a string representing the bounce email **text** body (not HTML body). You can use [mailparser](https://github.com/nodemailer/mailparser) for example.
 
 ```js
-const EmailBounceParse = require("email-bounce-parser");
+const EmailBounceParse = require("email-bounce-parser-browser");
 
 const result = new EmailBounceParse().read(MY_EMAIL_STRING);
 
